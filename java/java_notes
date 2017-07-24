@@ -1,0 +1,22 @@
+Can put "_" between numbers to help readability like so:
+int myValue = 2_147_438_647; //largest value an int can store
+
+Long numbers must have an l or an L after them, like so:
+long myLongValue = 2_147_438_648; //wrong
+long myLongValue = 2_147_438_648L; //right
+
+Bytes & shorts are automatically converted to integers on the right side, so we have to cast them.
+byte myByteValue = -128;
+byte myNewByteValue = (myByteValue/2); //won't work bc the value on the right is an int
+byte myNewByteValue = (byte) (myByteValue/2); //works bc we casted it to a byte
+
+Doubles & floats like it if you have a d or an f after the number, like so:
+double d = 5d;
+float f = 5f;
+However, if you put a decimal in, it will automatically assume a double like so:
+double d = 5.25;
+float f = 5.25f; //still want the f there
+//can also do: float f = (float) 5.25; but I recommend doing the f instead
+
+To assign unicode characters to Java chars, we use:
+char c = '\uxxxx' //xxxx = any 4 char long hexadecimal
