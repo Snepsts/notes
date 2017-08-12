@@ -1,0 +1,25 @@
+(define len2 (lambda (L)
+	(cond ((null? L) 0)
+		((not (pair? L)) 1)
+		(#t (+ 1 (len2(cdr L))))
+	))
+)
+
+(define (rev L)
+	(define (rev2 L M)
+		(cond ((null? L) M)
+			(#t (rev2 (cdr L) (cons (car L) M)))
+		)
+	)
+	(rev2 L '())
+)
+
+;;(mymap F L)
+
+(define (mymap F L)
+	(cond ((null? L) '())
+		(#t (cons (F (car L)) (mymap F (cdr L))))
+	)
+)
+
+(mymap (lambda (x) (* x x)) '(1 2 3))

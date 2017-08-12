@@ -1,0 +1,5 @@
+Name	ID	Year
+Apple	23		2016
+Orange	35		2016
+iPhone	65		2015
+ASUS	71		2017

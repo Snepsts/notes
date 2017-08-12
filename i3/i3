@@ -1,0 +1,36 @@
+This is my i3 shortcuts file:
+Mod Key is Alt
+Mod Key will be denoted as $mod
+# means any number from 1-9
+
+$mod + Enter : Terminal
+$mod + d : Dmenu
+$mod + v : Horizontal Split
+$mod + f : FullScreen
+Ctrl + Q : Close
+$mod + F4 : Close
+$mod + Shift + Q : Close a whole window
+$mod + # : Switch Windows
+$mod + Shift + # : Move to a new window
+$mod + Shift + e : Exit
+
+# CMD LINE: display on multimonitor
+xrandr --auto
+
+# SCREEN TEARING FIX:
+xrandr --output eDP1 --rate 60
+
+# FILES TO BACKUP
+~/.i3/config
+~/.i3status.conf
+~/.config/compton.conf
+
+# How to edit keyring stuff
+dmenu -> seahorse
+
+# How to turn mic in to audio out
+pactl load-module module-loopback
+
+# Names of ifaces (for net-speed n shit)
+ethernet = enp4s0
+wifi = wlp3s0

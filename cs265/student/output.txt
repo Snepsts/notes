@@ -1,0 +1,3 @@
+Name: Michael
+GPA: 3.75
+Year: Junior

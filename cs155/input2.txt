@@ -1,0 +1,5 @@
+ID		Name		Price
+15		Board		13.65
+36		CPU			24.38
+76		Memory		15.71
+99		HardDisk	18.46
