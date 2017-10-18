@@ -187,3 +187,6 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+### nim
+nimcache/

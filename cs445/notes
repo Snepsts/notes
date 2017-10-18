@@ -1,0 +1,64 @@
+Historical Aspects:
+ - Historically, there has been a huge software crisis.
+  - In 1968, a NATO Conference in Germany aimed to solve the software crisis.
+
+ - The idea is that software is delivered:
+  - Late
+  - Over Budget
+  - With Residual Faults
+
+ - On average, only a little over a third of all software was finished on time with all features and within budget.
+  - ~1/5 canceled
+  - ~1/2 completed late/over budget/without features
+
+ - Move forward to more recent times, 2002 survey found 78% of disputes ends in litigation.
+ - Of those:
+  - 67%, the functionality did not meet up to the claims
+  - 56%, promised delivery was moved several times
+  - 45%, defects were so bad that the systems were unusable
+
+ - Still have problems today, software crisis lives on.
+ - Today it is called the software depression:
+  - Long duration
+  - Poor prognosis
+
+Economic Aspects:
+ - Coding method X(new) is 10% faster than currently used method Y(old)
+  - Should it be used?
+   - Common sense says "Of course!"
+   - Software Engineering answer says to consider...
+    - The cost of training
+	- The impact of introducing a new technology
+	- The effect of X(new) on maintenance
+
+Maintenance Aspects:
+ - Life-cycle model vs Life cycle
+  - Life-cycle model is theoretically what should be done
+  - Life cycle is what is actually done
+
+ - Classical model (1970)
+  - 1. Requirements phase
+   - Explore concept
+   - Elicit the client's requirements
+  - 2. Analysis (specification) phase
+   - Analyze the client's requirements
+   - Draw up the specification document & software project management plan
+   - "What the product is supposed to do"
+  - 3. Design phase
+   - Architectural design, followed by detailed design
+   - "How the product does it"
+  - 4. Implementation phase
+   - Coding
+   - Unit testing
+   - Integration
+   - Acceptance testing
+  - 5. Postdelivery maintenance
+   - Corrective maintenance
+   - Perfective maintenance
+   - Adaptive maintenance
+  - 6. Retirement
+
+Types of Software:
+ - Contractual
+ - Commercial off-the-shelf (CMOS)
+ - Open Source
