@@ -190,3 +190,5 @@ ENV/
 
 ### nim
 nimcache/
+nim/* # Executables in nim, by default, have no extension
+!nim/*.nim # So we ignore everything EXCEPT .nim files
