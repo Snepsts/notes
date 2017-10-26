@@ -24,14 +24,14 @@ int main()
 
 void swap_array_rec(int array[], int start, int end)
 {
-	if (start > end) //stop case
+	if (start >= end) //stop case
 		return;
 
 	int swap = array[start];
 	array[start] = array[end];
 	array[end] = swap;
 
-	swap_array_rec(array, start+1, end-1);
+	swap_array_rec(array, start+1, end-1); //base case
 }
 
 void swap_array_it(int array[], int size)
