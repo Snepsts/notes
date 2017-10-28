@@ -30,6 +30,16 @@ int main()
 	WINDOW *text;
 
 	text = create_new_win(12, 32, 3, 26);
+	wattron(text, COLOR_PAIR(3));
+	mvwaddch(text, 1, 1, 'a');
+	wrefresh(text);
+
+	WINDOW *menu;
+
+	menu = create_new_win(5, 36, row/2, col/2-18);
+	wattron(menu, COLOR_PAIR(4));
+	mvwaddch(menu, 1, 1, 'a');
+	wrefresh(menu);
 
 	refresh();
 	getch(); //get user input before ending curses mode
@@ -44,7 +54,7 @@ WINDOW *create_new_win(int height, int width, int starty, int startx)
 
 	local_win = newwin(height, width, starty, startx);
 	box(local_win, 0, 0); //0, 0 gives default characters for the vertical and
-	                       //horizontal lines
+	                      //horizontal lines
 	wrefresh(local_win); //show the box
 
 	return local_win;
