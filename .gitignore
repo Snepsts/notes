@@ -1,7 +1,7 @@
 ### C and C++
 
 # Prerequisites
-*.d
+#*.d
 
 # Compiled Object files
 *.slo
