@@ -13,7 +13,7 @@ u_int8_t food_level[SIZE]; //food_level for each philosopher (3 implies full)
 pthread_mutex_t chopstick[SIZE]; //chopstick for each philosopher
 
 void* act(void* index); //thread function
-void* listener(); //thread listener for exiting program
+void* listener(void* fix_compile); //thread listener for exiting program
 int whilevar = 1; //global while variable, disablable by our listener thread
 
 //message stuff
@@ -36,8 +36,10 @@ int main() //in order to eat, philosophers need chopstick i and i+1%5
 		sleep(1); //ensure index is correctly set
 	}
 
-	//pthread_t stop_thread;
-	//err = pthread_create(&stop_thread, NULL, &listener, NULL);
+	pthread_t stop_thread;
+	err = pthread_create(&stop_thread, NULL, &listener, NULL);
+
+	pthread_join(stop_thread, NULL);
 
 	for (size_t i = 0; i < SIZE; i++)
 		pthread_join(philosophers[i], NULL);
@@ -81,8 +83,25 @@ void* act(void* index)
 	return NULL;
 }
 
-void* listener()
+void* listener(void* fix_compile)
 {
+	const int LINE = 50;
+	char *end;
+	char buffer[LINE];
+
+	do {
+		if (!fgets(buffer, sizeof buffer, stdin))
+			break;
+
+		//remove newline
+		buffer[strlen(buffer) - 1] = 0;
+
+		int n = strtol(buffer, &end, 10);
+		n += 0; //remove warning
+	} while (end != buffer + strlen(buffer));
+
+	whilevar = 0;
+
 	return NULL;
 }
 
