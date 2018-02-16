@@ -75,7 +75,7 @@ void* act(void* index)
 		}
 
 		sleep(1); //give philosophers time before next action
-		//also, the sleep call ensures threads are not starved for system resources
+		//ensures a fixed amount of time is given to each thread
 	}
 
 	return NULL;
