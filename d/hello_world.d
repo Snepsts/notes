@@ -1,8 +1,13 @@
 import std.stdio;
 
+//day 0 of 30 days of code
+
 int main()
 {
-	writefln("Hello World!");
+    string input_str = readln;
 
-	return 0;
+    writefln("Hello, World.");
+    writefln(input_str);
+
+    return 0;
 }
