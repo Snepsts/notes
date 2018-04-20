@@ -50,3 +50,24 @@ This tutorial is meant for command line git only. If you wanna use a GUI git too
 * If this is the case, we'll have to choose between two different versions. I'm going to assume you're using the Atom editor.
 	* You'll have to choose between two things per instance of conflict. If you need them both, copy one, choose the other (there will be a button that says "choose me"), and paste that one. This is the easiest way to deal with it.
 * And that's pretty much it. Have fun at MegaminerAI!!!
+
+## MegaminerAI specifics
+Okay here's a step by step guide on starting your AI using Github:
+* Step 1: Grab the source
+	* git clone https://github.com/siggame/Joueur.cpp
+* Step 2: Make your own repo on Github
+	* Go to the site, hit the plus button on the top right, and hit new repo
+	* Give it a name but make sure it's empty
+* Step 3: Resetting the origin
+	* In the project folder, you're going to type git remote remove origin
+	* Now your repo has no origin
+* Step 4: Setting your repo to origin
+	* Copy the `…or push an existing repository from the command line` commands
+	* They should look something like this:
+		* `git remote add origin https://github.com/yourusernamehere/reponame.git`
+		* `git push -u origin master`
+	* If you can't figure this part out I worry about you
+* Step 5: Start coding
+	* If you're on a team you'll need to add them to your Github repo's trusted users or something like that
+	* It's in the repo settings on the website
+	* You can figure it out, you're smart
