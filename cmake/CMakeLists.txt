@@ -1,6 +1,5 @@
 cmake_minimum_required (VERSION 2.6)
 project (first_try)
-add_executable(first_try hello_world.cpp)
 
 # the version number
 set (first_try_VERSION_MAJOR 1)
@@ -15,7 +14,12 @@ configure_file (
 
 # add the binary tree to the search path for include files so that we will
 # find hello_world_config.h
-include_directories("${PROJECT_BINARY_DIR}")
+include_directories ("${PROJECT_BINARY_DIR}")
+
+# add in libraries
+include_directories ("${PROJECT_SOURCE_DIR}/print_hello_world")
+add_subdirectory (print_hello_world)
 
 # add the executable
-add_executable(first_try hello_world.cpp)
+add_executable (first_try hello_world.cpp)
+target_link_libraries (first_try print_hello_world)

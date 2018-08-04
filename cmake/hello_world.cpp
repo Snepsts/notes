@@ -5,9 +5,9 @@
 int main()
 {
 	std::cout << "first_try version "
-                  << first_try_VERSION_MAJOR << "."
+	          << first_try_VERSION_MAJOR << "."
 	          << first_try_VERSION_MINOR << '\n';
-	std::cout << "Hello, World!\n";
+	print_hello_world();
 
 	return 0;
 }

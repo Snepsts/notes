@@ -189,6 +189,19 @@ ENV/
 .mypy_cache/
 
 ### nim
+
 nimcache/
 nim/* # Executables in nim, by default, have no extension
 !nim/*.nim # So we ignore everything EXCEPT .nim files
+
+### cmake
+
+CMakeCache.txt
+CMakeFiles
+CMakeScripts
+Testing
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
